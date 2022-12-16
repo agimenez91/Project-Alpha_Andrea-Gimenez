@@ -1,0 +1,58 @@
+html {
+    font-size: 18px;
+    font-weight: 500;
+    color: #121212;
+    font-family: articulat-cf, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 2%;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+
+.logo {
+    height: 50px;
+    width: auto;
+}
