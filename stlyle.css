@@ -117,12 +117,68 @@ a:hover,
 .icon {
     height: 24px;
     width: auto;
+    margin-bottom: 0.8em;
+}
+
+.liicons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
 }
 
 .personalpicturedesktop {
     width: auto;
     height: auto;
 }
+
+/*------ Inputs ------*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    appearance: none;
+    border: none;
+    background-color: #ffffff4a;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+    margin-bottom: 1em;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #ffffff7c;
+}
+
+input[type="submit"] {
+    appearance: none;
+    background-color: #ffffff;
+    color: #A30738;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+}
+
+input[type="submit"]:hover {
+    appearance: none;
+    background-color: #A30738;
+    color: #ffffff;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+}
+
+/*------ Inputs ends ------*/
 
 /*------ Menu starts ------*/
 .menu {
@@ -183,7 +239,6 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 10px;
-    font-size: 10px;
 }
 
 footer ul {
@@ -223,9 +278,8 @@ footer li {
 }
 /*------ Block displays ends ------*/
 
-/*------ Block style ------*/
-
-.blockpositioncentered {
+/*------ Block styles ------*/
+.maincontentarea {
     display: flex;
     width: 65vw;
     height: 100vh;
@@ -234,7 +288,7 @@ footer li {
     background-color: #A30738;
 } 
 
-.coverblockstyle {
+.covercontentarea {
     display: flex;
     width: 35vw;
     height: 100vh;
@@ -243,14 +297,38 @@ footer li {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url('/Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inelementsarea {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .personalimage {
     max-width: 400px;
     height: auto;
-    margin-bottom: -25%;
+    margin-bottom: -20%;
 }
-/*------ Block style end ------*/
+
+.iconscontentarea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    justify-content: space-between;
+}
+
+.iconscontentareacontact {
+    justify-content: space-evenly;
+}
+/*------ Block styles ends ------*/
 
 /*------ Utilities ------*/
 .textaligncenter {
@@ -261,15 +339,23 @@ footer li {
     color: #A30738;
 }
 
-.flexcentercolumnsidemargin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 10% 0 10%;
-}
-
 .smalltext16 {
     font-size: 16px;
 }
-/*------ Utilities ------*/
+
+.smalltext10 {
+    font-size: 10px;
+}
+
+.boldtext {
+    font-weight: 900;
+}
+
+.sidemargins10 {
+    margin: 0 10% 0 10%;
+}
+
+.sidemargins20 {
+    margin: 0 20% 0 20%;
+}
+/*------ Utilities ends ------*/
