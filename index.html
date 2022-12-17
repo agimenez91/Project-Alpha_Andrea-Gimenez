@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Giménez</title>
-    <link rel="shortcut icon" href="Images/AG-Logo.ico"> <!-- No funciona el enlace. Why? -->
+    <link rel="shortcut icon" href="Images/Logos/AG-Logo.ico">
     <link rel="Stylesheet" href="stlyle.css">
 </head>
 <body>
     <!-- Navigation Menu -->
-    <div>
-        <img src="Images/AG Logo.svg" alt="Andrea Gimenez Logo. It is formed by a combination of the letters A and G" class="logo"> <!-- No funciona el enlace. Why? -->
+    <div class="menu">
+        <img src="Images/Logos/AG Logo.svg" alt="Andrea Gimenez Logo. It is formed by a combination of the letters A and G" class="logo">
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Dark</a></li>
                 <li><a href="#">Light</a></li>
                 <li><a href="#">En</a></li>
@@ -27,15 +27,17 @@
     <!-- End of Navigation Menu -->    
 
     <!-- Cover -->  
-    <section class="">
-        <img src="" alt="Andrea Giménez Personal Picture">
-        <h1>UX/UI Front End Developer</h1>
-        <h2>Contributing to create a better internet</h2>
+    <section class="coverblockstyle">
+        <div class="flexcentercolumnsidemargin">
+            <img src="Images/FotoAndreaGiménez.png" alt="Andrea Gimenez Personal Picture" class="personalimage">
+            <h1 class="h2 textaligncenter color-vividBurgundy">UX/UI Front-End Developer</h1>
+            <p class="smalltext16 textaligncenter color-vividBurgundy">Contributing to create a better internet</p>
+        </div>
     </section>
     <!-- End of cover -->
 
     <!-- About -->
-    <section>
+    <section id="about" class="blockpositioncentered">
         <p>Hello! I’m Andrea, UX/UI designer, front-end developer, and marketer based in Valencia.</p>
         <p>I believe in the power of good design and communication to contribute making the internet a more accessible, creative and source of information environment.</p>
         <p>I haven’t had the typical route to become a developer. I have a multi-faceted background in marketing and sales, but when I first touched a backend, I knew that was made for me.</p>
@@ -45,44 +47,44 @@
     <!-- End of about -->
 
     <!-- Skills -->   
-    <section>
+    <section id="skills" class="blockpositioncentered">
         <section>
-            <h2>Hard Skills</h2>
+            <h2 class="textaligncenter">Hard Skills</h2>
                 <ul>
-                    <li><img src="#" alt="code Icon">HTML, CSS & JS</li>
-                    <li><img src="#" alt="Visual Studio Code Icon">VS Code</li>
-                    <li><img src="#" alt="Github Icon">GitHub</li>
-                    <li><img src="#" alt="Figma Icon">Figma</li>
-                    <li><img src="#" alt="Adobe Creative Suite Icon">Adobe CC</li>
-                    <li><img src="#" alt="Tilda Icon">Tilda</li>
-                    <li><img src="#" alt="WordPress Icon">WordPress</li>
-                    <li><img src="#" alt="Shopify Icon">Shopify</li>
+                    <li><img src="Images/Icons/Code.svg" alt="code Icon" class="icon">HTML, CSS & JS</li>
+                    <li><img src="Images/Icons/visual-studio-code-icon.svg" alt="Visual Studio Code Icon" class="icon">VS Code</li>
+                    <li><img src="Images/Icons/GitHub.svg" alt="Github Icon" class="icon">GitHub</li>
+                    <li><img src="Images/Icons/figma-icon.svg" alt="Figma Icon" class="icon">Figma</li>
+                    <li><img src="Images/Icons/adobe-creative-cloud-icon.svg" alt="Adobe Creative Suite Icon" class="icon">Adobe CC</li>
+                    <li><img src="Images/Icons/Tilda.svg" alt="Tilda Icon" class="icon">Tilda</li>
+                    <li><img src="Images/Icons/wordpress-icon.svg" alt="WordPress Icon" class="icon">WordPress</li>
+                    <li><img src="Images/Icons/shopify-icon.svg" alt="Shopify Icon" class="icon">Shopify</li>
                 </ul>    
         </section>
         <section>
-            <h2>Soft Skills</h2>
+            <h2 class="textaligncenter">Soft Skills</h2>
                 <ul>
-                    <li><img src="#" alt="Design Thinking Icon">Design Thinking</li>
-                    <li><img src="#" alt="Communication Icon">Communication</li>
-                    <li><img src="#" alt="Resolutive Icon">Resolutive</li>
-                    <li><img src="#" alt="Proactive Icon">Proactive</li>
-                    <li><img src="#" alt="Commited Icon">Commited</li>
-                    <li><img src="#" alt="Colaborative Icon">Colaborative</li>
-                    <li><img src="#" alt="Organized Icon">Organized</li>
-                    <li><img src="#" alt="Optimistic Icon">Optimistic</li>
+                    <li><img src="Images/Icons/Design Thinking.svg" alt="Design Thinking Icon" class="icon">Design Thinking</li>
+                    <li><img src="Images/Icons/Communication.svg" alt="Communication Icon" class="icon">Communicative</li>
+                    <li><img src="Images/Icons/Resolutive.svg" alt="Resolutive Icon" class="icon">Resolutive</li>
+                    <li><img src="Images/Icons/Proactive.svg" alt="Proactive Icon" class="icon">Proactive</li>
+                    <li><img src="Images/Icons/Commited.svg" alt="Commited Icon" class="icon">Commited</li>
+                    <li><img src="Images/Icons/Colaborative.svg" alt="Colaborative Icon" class="icon">Colaborative</li>
+                    <li><img src="Images/Icons/Organized.svg" alt="Organized Icon" class="icon">Organized</li>
+                    <li><img src="Images/Icons/Optimistic.svg" alt="Optimistic Icon" class="icon">Optimistic</li>
                 </ul>
         </section>
     </section>
     <!-- End of Skills --> 
 
     <!-- Contact -->
-     <section>
-        <h2>Contact</h2>
+     <section id="contact" class="blockpositioncentered">
+        <h2 class="textaligncenter">Contact</h2>
             <ul>
-                <li><img src="#" alt="Email Icon"><a href="mailto:andrea.gimenez91@gmail.com"><p>andreagimenez91@gmail.com</p></a></li>
-                <li><img src="#" alt="Phone Icon"><a href="tel:+34606647405"><p>+34 606 64 74 05</p></a></li>
-                <li><img src="#" alt="Linkedin Icon"><a href="https://www.linkedin.com/in/andreagimenezuso/"><p>/in/andreagimenezuso</p></a></li>
-                <li><img src="#" alt="Twitter Icon"><a href="https://twitter.com/whatthatfront"><p>@whatThatFront</p></a></li>
+                <li><img src="Images/Icons/Email.svg" alt="Email Icon" class="icon"><a href="mailto:andrea.gimenez91@gmail.com">andreagimenez91@gmail.com</a></li>
+                <li><img src="Images/Icons/Phone.svg" alt="Phone Icon" class="icon"><a href="tel:+34606647405">+34 606 64 74 05</a></li>
+                <li><img src="Images/Icons/Linkedin.svg" alt="Linkedin Icon" class="icon"><a href="https://www.linkedin.com/in/andreagimenezuso/">/in/andreagimenezuso</a></li>
+                <li><img src="Images/Icons/Twitter.svg" alt="Twitter Icon" class="icon"><a href="https://twitter.com/whatthatfront">@whatThatFront</a></li>
             </ul>
             <form action="">
                 <label for="LName">Last Name:</label>
@@ -103,8 +105,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>© All Rights Reserved. Andrea Giménez Usó</p>
         <ul>
+            <li>© All Rights Reserved. Andrea Giménez Usó.</li>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Cookies</a></li>
             <li><a href="#">Terms & Conditions</a></li>
