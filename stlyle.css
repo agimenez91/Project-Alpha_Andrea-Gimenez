@@ -295,7 +295,8 @@ footer ul {
     
 footer li {
     float: left;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 20px;
+    font-size: 10px;
 }
 /*------ Footer ends ------*/
 
@@ -400,4 +401,256 @@ footer li {
     font-weight: 500;
     text-decoration: underline;
 }
+
 /*------ Utilities ends ------*/
+
+/*------ Media Queries ------*/
+/*------ Tablet ------*/
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+        color: #121212;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color:#A30738;
+    }
+
+    #about {
+        display: flex;
+    }
+      
+    #skills {
+        display: flex;
+    }
+      
+    #contact {
+        display: flex;
+    }
+
+    .cover--area {
+        width: 100%;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .main--area {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    a,
+    .a {
+        color: #A30738;
+    }
+
+    button,
+    .btn {
+        color: #ffffff;
+        background-color: #A30738;
+        border: 1px solid #A30738;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        background-color: #12121212;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: #12121278;
+    }
+
+    input[type="submit"] {
+        background-color: #A30738;
+        color: #ffffff;
+        border: 2px solid #A30738;
+    }
+      
+    .input--area {
+        width: 100%;
+    }
+      
+    .input--area--row {
+        flex-direction: column;
+    }
+
+    .icon--card {
+        width: 20%;
+    }
+
+    .icon--card--contactpage {
+        width: 45%;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+        
+    footer li {
+        float: left;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+
+    .margin-side--10 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .margin-side--20 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .text--highlight {
+        font-weight: 500;
+        text-decoration: underline;
+        color: #A30738;
+    }
+
+}
+/*------ Tablet ends------*/
+
+/*------ Mobile ------*/
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 16px;
+        color: #121212;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color:#A30738;
+    }
+
+    #about {
+        display: flex;
+    }
+      
+    #skills {
+        display: flex;
+    }
+      
+    #contact {
+        display: flex;
+    }
+
+    .cover--area {
+        width: 100%;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .main--area {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    a,
+    .a {
+        color: #A30738;
+    }
+
+    button,
+    .btn {
+        color: #ffffff;
+        background-color: #A30738;
+        border: 1px solid #A30738;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        background-color: #12121212;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: #12121278;
+    }
+
+    input[type="submit"] {
+        background-color: #A30738;
+        color: #ffffff;
+        border: 2px solid #A30738;
+    }
+      
+    .input--area {
+        width: 100%;
+    }
+      
+    .input--area--row {
+        flex-direction: column;
+    }
+
+    .icon--card {
+        width: 40%;
+    }
+
+    .icon--card--contactpage {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+        
+    footer li {
+        float: left;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+
+    .margin-side--10 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .margin-side--20 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .text--highlight {
+        font-weight: 500;
+        text-decoration: underline;
+        color: #A30738;
+    }
+  }  
+/*------ Mobile ends ------*/
+/*------ Media Queries ends------*/
