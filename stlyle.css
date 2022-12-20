@@ -266,9 +266,6 @@ form {
   transition: all 0.3s ease-in-out;
 }
 
-/**
-Nav Styles
-**/
 .nav {
   position: fixed;
   width: 100%;
@@ -326,9 +323,7 @@ nav a:hover:before {
   height: 100%;
 }
 
-/**
-Animations
-**/
+/** Animations **/
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 25px;
@@ -387,7 +382,7 @@ footer li {
     height: auto;
     width: 100%;
     max-width: 400px;
-    margin-bottom: -20%;
+    margin-bottom: -80px;
 }
 
 .main--area {
