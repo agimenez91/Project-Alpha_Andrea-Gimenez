@@ -1,5 +1,5 @@
 html {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: #121212;
     font-family: articulat-cf, sans-serif;
@@ -95,7 +95,7 @@ ul {
 }
 
 /*------ Inputs ------*/
-input[type="text"],
+input[type="text"],  /*** me gustaría que el input de comments fuera más grande pero no lo he conseguido ***/
 input[type="email"],
 input[type="tel"] {
     appearance: none;
@@ -198,6 +198,7 @@ form {
 /*------ Icons ends ------*/
 
 /*------ Menu starts ------*/
+@media not all and (min-width: 1024px) {
 .menu {
     position: fixed;
     top: 0;
@@ -321,6 +322,7 @@ nav a:hover:before {
   top: 0;
   transform: scale(1);
 }
+}
 /*------ Menu ends ------*/
 
 /*------ Footer start ------*/
@@ -394,5 +396,287 @@ footer li {
     margin-bottom: 0px;
 }
 
+.color--vividBurgundy--cover {
+    color: #A30738;
+}
 /*------ Utilities ends ------*/
 
+/*------ Media Queries ------*/
+    /*------ Desktop ------*/
+    @media only screen and (min-width: 1024px) {
+        html {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        body {
+            flex-direction: row;
+            padding: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        button,
+        .btn {
+            color: #ffffff;
+            background-color: #A30738;
+            border: 1 solid #A30738;
+        }
+
+        button:hover,
+        .btn:hover {
+            color: #A30738;
+        }
+
+        a,
+        .a {
+            color: #ffffff;
+        }
+
+        a:hover,
+        .a:hover {
+            color: #A30738;
+        }
+
+        form {
+            padding-top: 5%;
+        }
+
+        /**Inputs**/
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            background-color: #ffffff2b;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="tel"]::placeholder {
+            color: #ffffff7c;
+        }
+
+        input[type="submit"] {
+            background-color: #ffffff;
+            color: #A30738;
+            border: 2px solid #ffffff;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #A30738;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .input--area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 48%;
+        }
+
+        .input--area--row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        /*** Icons ***/
+
+        .icon--card {
+            width: 25%;
+        }
+        
+        .icon--card--contactpage {
+            width: 25%;
+        }
+
+        /*** Menu ***/
+
+        #toggle {
+            display: none;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff00;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+        list-style-type: none;
+        padding-right: 20px;
+        }
+        
+        .menu li {
+            float: left;
+        }
+        
+        .menu a {
+            padding: 0px 30px 0px 0px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        
+        .menu a:hover {
+            font-weight: 900;
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        .menu a:focus {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        
+        .menu img {
+            height: auto;
+            width: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        /*** Block Display Desktop ***/
+        #about {
+            display: none;
+        }
+        
+        #skills {
+            display: none;
+        }
+        
+        #contact {
+            display: none;
+        }
+        
+        #about:target {
+            display: block;
+        }
+        
+        #skills:target {
+            display: block;
+        }
+        
+        #contact:target {
+            display: block;
+        }
+        
+        #link2 {
+            display: none;
+        }
+        
+        #link1 {
+            display: none;
+        }
+        
+        /*** Footer ***/
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
+        footer ul {
+            padding-right: 20px;
+        }
+            
+        footer li {
+            padding: 0 0 0 20px;
+        }
+
+        /*** Block Styles ***/
+        .cover--area {
+            width: 35%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-image: url('Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: cover;
+        }
+        
+        .cover--picture {
+            height: auto;
+            width: 100%;
+            margin-bottom: -20%;
+        }
+        
+        .main--area {
+            display: flex;
+            width: 65%;
+            justify-content: center;
+            align-items: center;
+            background-color: #A30738;
+        } 
+        
+        .main--area--content {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /*** Utilities ***/
+        .color--vividBurgundy {
+            color: #ffffff;
+        }
+
+        .text--highlight {
+            color: #ffffff;
+        }
+
+        .margin-side--10 {
+        margin: 0 10% 0 10%;
+        }
+
+        .margin-side--20 {
+            margin: 0 20% 0 20%;
+        }
+
+        .padding--top10 {
+            padding-top: 0%;
+            padding-bottom: 3%;
+        }
+
+
+
+    }
+    /*------ Desktop ends ------*/
+
+    /*------ Tablet ------*/
+    @media only screen and (min-width: 595px) and (max-width: 1024px) {
+
+        .margin-side--20 {
+            margin: 0 10% 0 10%;
+        }
+
+        body {
+            background-image: url('Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: contain;
+        }
+
+        .icon--card {
+            width: 25%;
+        }
+        
+        .icon--card--contactpage {
+            width: 25%;
+        }
+
+    }
+    /*------ Tablet ends ------*/
+    /*------ Media Queries ends ------*/
