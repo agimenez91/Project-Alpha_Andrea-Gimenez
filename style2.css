@@ -1,0 +1,663 @@
+html {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: articulat-cf, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+button,
+.btn {
+    color: #A30738;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+button:hover,
+.btn:hover {
+    color: #ffffff;
+    background-color: #121212;
+    border: 1px solid #121212;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.btn--secondary {
+    color: #A30738;
+    background-color: white;
+    border: 1px solid #A30738;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.btn--secondary:hover {
+    color: #ffffff;
+    background-color: #A30738;
+    border: 1px solid #A30738;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+a,
+.a {
+    appearance: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:hover,
+.a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0px;
+}
+
+/*------ Inputs ------*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    appearance: none;
+    background-color: #ffffff4a;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+    margin-bottom: 1em;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #ffffff7c;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input[type="submit"] {
+    appearance: none;
+    background-color: #ffffff;
+    color: #A30738;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+}
+
+input[type="submit"]:hover {
+    appearance: none;
+    background-color: #A30738;
+    color: #ffffff;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.5em 1em; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input--area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.input--area--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*------ Inputs ends ------*/
+
+/*------ Icons ------*/
+.icon {
+    height: 24px;
+    width: auto;
+    margin-bottom: 0.8em;
+}
+
+.icon--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+}
+
+.icon--position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon--card--contactpage {
+    display: flex;
+    width: 50%;
+}
+
+.icon--position--contactpage {  /*esto no me funciona*/
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+ul li {
+    font-size: 16px;
+}
+/*------ Icons ends ------*/
+
+/*------ Menu starts ------*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff00;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.menu ul {
+    list-style-type: none;
+    padding-right: 20px;
+}
+  
+.menu li {
+    float: left;
+}
+  
+.menu a {
+    padding: 0px 30px 0px 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.menu a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.menu a:focus {  /*--- quiero que cuando esté seleccionado aparezca este estilo, pero no funciona ---*/
+    font-weight: 900;
+    text-decoration: underline;
+}
+  
+.menu img {
+    height: auto;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+/*------ Menu ends ------*/
+
+/*------ Footer start ------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-right: 20px;
+}
+    
+footer li {
+    float: left;
+    padding: 0 0 0 20px;
+    font-size: 10px;
+}
+/*------ Footer ends ------*/
+
+/*------ Block displays ------*/
+
+
+#about {
+    display: none;
+}
+  
+#skills {
+    display: none;
+}
+  
+#contact {
+    display: none;
+}
+  
+#about:target {
+    display: block;
+}
+  
+#skills:target {
+    display: block;
+}
+  
+#contact:target {
+    display: block;
+}
+
+#link2 {
+    display: none;
+}
+
+#link1 {
+    display: none;
+}
+/*------ Block displays ends ------*/
+
+/*------ Block styles ------*/
+.cover--area {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.cover--picture {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: -20%;
+}
+
+.main--area {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    background-color: #A30738;
+} 
+
+.main--area--content {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*------ Block styles ends ------*/
+
+/*------ Utilities ------*/
+.text-align--center {
+    text-align: center;
+}
+
+.color--vividBurgundy {
+    color: #A30738;
+}
+
+.text-size--10 {
+    font-size: 10px;
+}
+
+.font-weight--bold {
+    font-weight: 900;
+}
+
+.margin-side--10 {
+    margin: 0 10% 0 10%;
+}
+
+.margin-side--20 {
+    margin: 0 20% 0 20%;
+}
+
+.text--highlight {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/*------ Utilities ends ------*/
+
+/*------ Media Queries ------*/
+/*------ Tablet ------*/
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+        color: #121212;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color:#A30738;
+    }
+
+    #about {
+        display: flex;
+    }
+      
+    #skills {
+        display: flex;
+    }
+      
+    #contact {
+        display: flex;
+    }
+
+    .cover--area {
+        width: 100%;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .main--area {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    a,
+    .a {
+        color: #A30738;
+    }
+
+    button,
+    .btn {
+        color: #ffffff;
+        background-color: #A30738;
+        border: 1px solid #A30738;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        background-color: #12121212;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: #12121278;
+    }
+
+    input[type="submit"] {
+        background-color: #A30738;
+        color: #ffffff;
+        border: 2px solid #A30738;
+    }
+      
+    .input--area {
+        width: 100%;
+    }
+      
+    .input--area--row {
+        flex-direction: column;
+    }
+
+    .icon--card {
+        width: 25%;
+    }
+
+    .icon--card--contactpage {
+        width: 50%;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+        
+    footer li {
+        float: left;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+
+    .margin-side--10 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .margin-side--20 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .text--highlight {
+        font-weight: 500;
+        text-decoration: underline;
+        color: #A30738;
+    }
+
+}
+/*------ Tablet ends------*/
+
+/*------ Mobile ------*/
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 16px;
+        color: #121212;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color:#A30738;
+    }
+
+    #about {
+        display: flex;
+    }
+      
+    #skills {
+        display: flex;
+    }
+      
+    #contact {
+        display: flex;
+    }
+
+    .cover--area {
+        width: 100%;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .main--area {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    a,
+    .a {
+        color: #A30738;
+    }
+
+    button,
+    .btn {
+        color: #ffffff;
+        background-color: #A30738;
+        border: 1px solid #A30738;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        background-color: #12121212;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: #12121278;
+    }
+
+    input[type="submit"] {
+        background-color: #A30738;
+        color: #ffffff;
+        border: 2px solid #A30738;
+    }
+      
+    .input--area {
+        width: 100%;
+    }
+      
+    .input--area--row {
+        flex-direction: column;
+    }
+
+    .icon--card {
+        width: 40%;
+    }
+
+    .icon--card--contactpage {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+        
+    footer li {
+        float: left;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+
+    .margin-side--10 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .margin-side--20 {
+        margin: 0 5% 0 5%;
+    }
+    
+    .text--highlight {
+        font-weight: 500;
+        text-decoration: underline;
+        color: #A30738;
+    }
+  }  
+/*------ Mobile ends ------*/
+/*------ Media Queries ends------*/
