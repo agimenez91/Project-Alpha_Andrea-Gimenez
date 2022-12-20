@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     margin: 0;
     background-color: #ffffff;
-    padding: 20% 24px 24px 24px;
+    padding: 80px 24px 24px 24px;
 }
 
 h1,
@@ -128,7 +128,7 @@ input[type="tel"] {
     background-color: #0000002b;
     border: none;
     border-radius: 5px;
-    padding: 0.5em 1em; 
+    padding: 0.8em 1em; 
     margin-bottom: 1em;
 }
 
@@ -156,7 +156,7 @@ input[type="submit"] {
     width: 100%;
     border: 2px solid #A30738;
     border-radius: 5px;
-    padding: 0.5em 1em; 
+    padding: 0.8em 1em; 
 }
 
 input[type="submit"]:hover {
@@ -166,7 +166,7 @@ input[type="submit"]:hover {
     width: 100%;
     border: 2px solid #A30738;
     border-radius: 5px;
-    padding: 0.5em 1em; 
+    padding: 0.8em 1em; 
 }
 
 form {
@@ -239,7 +239,7 @@ form {
   
 .menu img {
     height: auto;
-    width: 40px;
+    width: 3em;
     display: flex;
     align-items: center;
 }
@@ -370,12 +370,8 @@ footer li {
 /*------ Block styles ------*/
 .cover--area {
     display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .cover--picture {
@@ -384,13 +380,6 @@ footer li {
     max-width: 400px;
     margin-bottom: -80px;
 }
-
-.main--area {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-} 
 /*------ Block styles ends ------*/
 
 /*------ Utilities ------*/
@@ -413,11 +402,16 @@ footer li {
 .text--highlight {
     font-weight: 500;
     text-decoration: underline;
+    color: #A30738;
 }
 
 .padding--top10 {
     padding-top: 10%;
     padding-bottom: 5%;
+}
+
+.paddin---botom0 {
+    margin-bottom: 0px;
 }
 
 /*------ Utilities ends ------*/
