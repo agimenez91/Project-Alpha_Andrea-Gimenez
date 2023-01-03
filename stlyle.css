@@ -355,6 +355,7 @@ footer li {
     display: flex;
     align-items: center;
     flex-direction: column;
+    order: -2;
 }
 
 .cover--picture {
@@ -362,6 +363,10 @@ footer li {
     width: 100%;
     max-width: 400px;
     margin-bottom: -80px;
+}
+
+.about {
+    order: -1;
 }
 /*------ Block styles ends ------*/
 
@@ -551,14 +556,7 @@ footer li {
             align-items: center;
         }
 
-        /*** Block Display Desktop ***/
-        .slide {
-            display:none;
-        }
 
-        .slide:target {
-            display: block;
-        }
         
         /*** Footer ***/
         footer {
@@ -611,6 +609,24 @@ footer li {
             height: 100vh;
             justify-content: center;
             flex-direction: column;
+        }
+
+        /*** Block Display Desktop ***/
+
+        .slide {
+            display:none;
+        }
+
+        .slide.about {
+            display:block;
+        }
+
+        .slide:target {
+            display: block;
+        }
+
+        .slide:target ~ .slide.about {
+            display: none;
         }
 
         /*** Utilities ***/
