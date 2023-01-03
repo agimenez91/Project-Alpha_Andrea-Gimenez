@@ -161,9 +161,10 @@ form {
 
 /*------ Icons ------*/
 .icon {
-    height: 24px;
+    height: 20px;
     width: auto;
     margin-bottom: 0.8em;
+    fill: #121212;
 }
 
 .icon--card {
@@ -492,6 +493,11 @@ footer li {
             width: 25%;
         }
 
+        .icon {
+            fill: #ffffff;
+            height: 15px;
+        }
+
         /*** Menu ***/
 
         #toggle {
@@ -547,10 +553,6 @@ footer li {
 
         /*** Block Display Desktop ***/
         #about {
-            display: none;
-        }
-
-        #about:not() {
             display: none;
         }
         
