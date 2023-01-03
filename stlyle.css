@@ -549,6 +549,10 @@ footer li {
         #about {
             display: none;
         }
+
+        #about:not() {
+            display: none;
+        }
         
         #skills {
             display: none;
@@ -568,14 +572,6 @@ footer li {
         
         #contact:target {
             display: block;
-        }
-        
-        #link2 {
-            display: none;
-        }
-        
-        #link1 {
-            display: none;
         }
         
         /*** Footer ***/
