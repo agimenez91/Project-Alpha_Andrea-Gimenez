@@ -1,0 +1,690 @@
+html {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: articulat-cf, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #121212;
+    padding: 80px 24px 24px 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+button,
+.btn {
+    color: #121212;
+    background-color: #9AB9D7;
+    border: 1px solid #9AB9D7;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: none;
+}
+
+button:hover,
+.btn:hover {
+    color: #9AB9D7;
+    background-color: #121212;
+    border: 1px solid #121212;
+    border-radius: 8px;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: none;
+}
+
+a,
+.a {
+    appearance: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:hover,
+.a:hover {
+    color: #9AB9D7;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0px;
+}
+
+/*------ Inputs ------*/
+input[type="text"],  /*** me gustaría que el input de comments fuera más grande pero no lo he conseguido ***/
+input[type="email"],
+input[type="tel"] {
+    appearance: none;
+    background-color: #ffffff2b;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 1em; 
+    margin-bottom: 1em;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #ffffff7c;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input[type="submit"] {
+    appearance: none;
+    background-color: #9AB9D7;
+    color: #ffffff;
+    width: 100%;
+    border: 2px solid #9AB9D7;
+    border-radius: 5px;
+    padding: 0.8em 1em; 
+}
+
+input[type="submit"]:hover {
+    appearance: none;
+    background-color: #ffffff;
+    color: #9AB9D7;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.8em 1em; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input--area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*------ Inputs ends ------*/
+
+/*------ Icons ------*/
+.icon {
+    height: 20px;
+    width: auto;
+    margin-bottom: 0.8em;
+    fill: #ffffff;
+}
+
+.icon--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+.icon--position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon--card--contactpage {
+    display: flex;
+    width: 50%;
+}
+
+.icon--position--contactpage {  /*esto no me funciona*/
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+/*------ Icons ends ------*/
+
+/*------ Menu starts ------*/
+@media not all and (min-width: 1024px) {
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    background-color: #00000000;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+  
+.menu img {
+    height: auto;
+    width: 3em;
+    display: flex;
+    align-items: center;
+}
+
+#toggle {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0em;
+  right: 48px;
+  padding: 24px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #9AB9D7;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000d9;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.nav-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 3em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0%;
+}
+
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: #9AB9D7;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #9AB9D7;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+/** Animations **/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+}
+/*------ Menu ends ------*/
+
+/*------ Footer start ------*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff00;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+    
+footer li {
+    float: left;
+    padding: 0 0 0 10px;
+    font-size: 10px;
+}
+/*------ Footer ends ------*/
+
+/*------ Block styles ------*/
+.cover--area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: -2;
+}
+
+.cover--picture {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: -80px;
+    filter: grayscale(100%);
+}
+
+.about {
+    order: -1;
+}
+/*------ Block styles ends ------*/
+
+/*------ Utilities ------*/
+.text-align--center {
+    text-align: center;
+}
+
+.color--vividBurgundy {
+    color: #9AB9D7;
+}
+
+.logo {
+    fill: #9AB9D7;
+    height: 40px;
+    width: auto;
+}
+
+.text-size--10 {
+    font-size: 10px;
+}
+
+.font-weight--bold {
+    font-weight: 900;
+}
+
+.text--highlight {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #9AB9D7;
+}
+
+.padding--top10 {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.paddin---botom0 {
+    margin-bottom: 0px;
+}
+
+.color--vividBurgundy--cover {
+    color: #9AB9D7;
+}
+/*------ Utilities ends ------*/
+
+/*------ Media Queries ------*/
+    /*------ Desktop ------*/
+    @media only screen and (min-width: 1024px) {
+        html {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        body {
+            flex-direction: row;
+            padding: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        button,
+        .btn {
+            color: #121212;
+            background-color: #9AB9D7;
+            border: 1 solid #9AB9D7;
+        }
+
+        button:hover,
+        .btn:hover {
+            color: #ffffff;
+        }
+
+        a,
+        .a {
+            color: #ffffff;
+        }
+
+        a:hover,
+        .a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        form {
+            padding-top: 5%;
+        }
+
+        /**Inputs**/
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            background-color: #ffffff2b;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="tel"]::placeholder {
+            color: #ffffff7c;
+        }
+
+        input[type="submit"] {
+            background-color: #9AB9D7;
+            color: #121212;
+            border: 2px solid #9AB9D7;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ffffff;
+            color: #121212;
+            border: 2px solid #ffffff;
+        }
+
+        .input--area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 48%;
+        }
+
+        .input--area--row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        /*** Icons ***/
+
+        .icon--card {
+            width: 25%;
+        }
+        
+        .icon--card--contactpage {
+            width: 25%;
+        }
+
+        .icon {
+            fill: #ffffff;
+        }
+
+        /*** Menu ***/
+
+        #toggle {
+            display: none;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff00;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+        list-style-type: none;
+        padding-right: 20px;
+        }
+        
+        .menu li {
+            float: left;
+        }
+        
+        .menu a {
+            padding: 0px 30px 0px 0px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        
+        .menu a:hover {
+            font-weight: 900;
+            text-decoration: underline;
+            color: #9AB9D7;
+        }
+
+        .menu a:focus {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        
+        .menu img {
+            height: auto;
+            width: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        
+        /*** Footer ***/
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
+        footer ul {
+            padding-right: 20px;
+        }
+            
+        footer li {
+            padding: 0 0 0 20px;
+        }
+
+        /*** Block Styles ***/
+        .cover--area {
+            width: 35%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #1f1f1f;
+        }
+        
+        .cover--picture {
+            height: auto;
+            width: 100%;
+            margin-bottom: -20%;
+            max-width: 1000px;
+        }
+        
+        .main--area {
+            display: flex;
+            width: 65%;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+        } 
+        
+        .main--area--content {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /*** Block Display Desktop ***/
+
+        .slide {
+            display:none;
+        }
+
+        .slide.about {
+            display:block;
+        }
+
+        .slide:target {
+            display: block;
+        }
+
+        .slide:target ~ .slide.about {
+            display: none;
+        }
+
+        /*** Utilities ***/
+
+        .margin-side--10 {
+        margin: 0 10% 0 10%;
+        }
+
+        .margin-side--20 {
+            margin: 0 20% 0 20%;
+        }
+
+        .padding--top10 {
+            padding-top: 0%;
+            padding-bottom: 3%;
+        }
+
+        .cookies {
+            position: relative;
+            background-color: #9AB9D7;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+
+
+    }
+    /*------ Desktop ends ------*/
+
+    /*------ Tablet ------*/
+    @media only screen and (min-width: 595px) and (max-width: 1024px) {
+
+        .margin-side--20 {
+            margin: 0 10% 0 10%;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: contain;
+        }
+
+        .icon--card {
+            width: 25%;
+        }
+        
+        .icon--card--contactpage {
+            width: 25%;
+        }
+
+    }
+    /*------ Tablet ends ------*/
+
+    
+    /*------ Media Queries ends ------*/
