@@ -552,27 +552,11 @@ footer li {
         }
 
         /*** Block Display Desktop ***/
-        #about {
-            display: none;
+        .slide {
+            display:none;
         }
-        
-        #skills {
-            display: none;
-        }
-        
-        #contact {
-            display: none;
-        }
-        
-        #about:target {
-            display: block;
-        }
-        
-        #skills:target {
-            display: block;
-        }
-        
-        #contact:target {
+
+        .slide:target {
             display: block;
         }
         
