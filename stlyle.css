@@ -379,6 +379,12 @@ footer li {
     color: #A30738;
 }
 
+.logo {
+    fill: #A30738;
+    height: 40px;
+    width: auto;
+}
+
 .text-size--10 {
     font-size: 10px;
 }
