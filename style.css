@@ -555,7 +555,7 @@ footer li {
             align-items: center;
             flex-wrap: wrap;
             justify-content: center;
-            background-image: url('Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+            background-image: url('Images/coverBg.png');
             background-repeat: no-repeat;
             background-position: bottom left;
             background-size: cover;
@@ -651,7 +651,7 @@ footer li {
         }
 
         body {
-            background-image: url('Images/coverbackgrounddesktop.png'); /*backgrounds no funcionan*/
+            background-image: url('Images/CoverBgTablet.png');
             background-repeat: no-repeat;
             background-position: bottom left;
             background-size: contain;
