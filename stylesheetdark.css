@@ -367,7 +367,7 @@ footer li {
 
 .text--highlight {
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: none;
     color: #9AB9D7;
 }
 
@@ -558,7 +558,7 @@ footer li {
             background-repeat: no-repeat;
             background-position: bottom left;
             background-size: cover;
-            background-color: #1f1f1f;
+            background: linear-gradient(180deg, #1F1F1F 39.9%, #121212 84.93%);
         }
         
         .cover--picture {
