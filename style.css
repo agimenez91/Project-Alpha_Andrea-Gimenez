@@ -111,7 +111,7 @@ input[type="text"],  /*** me gustaría que el input de comments fuera más grand
 input[type="email"],
 input[type="tel"] {
     appearance: none;
-    background-color: #0000002b;
+    background-color: #1212122b;
     border: none;
     border-radius: 5px;
     padding: 0.8em 1em; 
@@ -244,7 +244,7 @@ form {
     left: 0;
     width: 100%;
     padding: 24px;
-    background-color: #ffffff00;
+    background-color: transparent;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -274,7 +274,7 @@ form {
     height: 100vh;
     left: -100%;
     top: 0px;
-    background-color: #ffffff99;
+    background-color: #ffffffda;
     transition: 0.3s;  
 }
   
@@ -305,7 +305,7 @@ footer {
     align-items: center;
     flex-direction: row;
     width: 100%;
-    background-color: #ffffff00;
+    background-color: transparent;
     text-align: center;
     padding: 10px;
 }

@@ -4,11 +4,11 @@ function toggleStylesheet() {
     if (currentStylesheet.getAttribute("href") === "style.css") {
       currentStylesheet.setAttribute("href", "stylesheetdark.css");
       document.getElementById("dark-link").textContent = "Light";
-      document.getElementById("coverPic").src="Images/FotoAndreaGiménezDark.png";
+      document.getElementById("coverPic").src="/Images/FotoAndreaGiménezDark.png.png";
     } else {
       currentStylesheet.setAttribute("href", "style.css");
       document.getElementById("dark-link").textContent = "Dark";
-      document.getElementById("coverPic").src="Images/FotoAndreaGiménezLight.png";
+      document.getElementById("coverPic").src="/Images/FotoAndreaGiménezLight.png";
     }
   }
   
