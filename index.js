@@ -4,7 +4,7 @@ function toggleStylesheet() {
     if (currentStylesheet.getAttribute("href") === "style.css") {
       currentStylesheet.setAttribute("href", "stylesheetdark.css");
       document.getElementById("dark-link").textContent = "Light";
-      document.getElementById("coverPic").src="Images/FotoAndreaGiménezDark.png.png";
+      document.getElementById("coverPic").src="Images/FotoAndreaGiménezDark.png";
     } else {
       currentStylesheet.setAttribute("href", "style.css");
       document.getElementById("dark-link").textContent = "Dark";
